@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Talent Networks feed engine status: client job counts, categories and problems.">
+<title>Feed Engine Status</title>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Feed Engine Status","dateModified":"2026-10-03T20:10:23Z","publisher":{"@type":"Organization","name":"Great Job Spot, Inc."}}</script>
+<style>
+:root{--bg:#f7f7f5;--fg:#1d1d1b;--muted:#6b6b66;--card:#fff;--line:#e3e2dd;--ok:#1f7a4d;--warn:#a15c00;--bad:#b3261e;--accent:#0b5cad}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#161615;--fg:#ecebe6;--muted:#a3a29c;--card:#1f1f1d;--line:#34332f;--ok:#5cc28f;--warn:#e0a54a;--bad:#f07b72;--accent:#6aa9ec}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+main{max-width:1100px;margin:0 auto;padding:24px 16px 64px}h1{font-size:24px;margin:0 0 4px}h2{font-size:18px;margin:32px 0 8px}
+.muted{color:var(--muted)}.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;margin:12px 0}
+table{width:100%;border-collapse:collapse;font-size:14px}th,td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-weight:600;color:var(--muted)}.scroll{overflow-x:auto}.pill{display:inline-block;padding:1px 8px;border-radius:99px;font-size:12px;border:1px solid var(--line)}
+.live{color:var(--ok)}.test{color:var(--warn)}.bad{color:var(--bad)}.ok{color:var(--ok)}.warn{color:var(--warn)}a{color:var(--accent)}
+details summary{cursor:pointer;font-weight:600}ul.problems{margin:4px 0 0 18px;padding:0}
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>Feed Engine Status</h1>
+<p class="muted">Updated Oct 3, 2026 4:10 PM EDT. Test clients appear here only. Live clients are in the feeds.</p>
+</header>
+<section aria-labelledby="feeds"><h2 id="feeds">Feeds</h2><div class="card scroll"><table>
+<thead><tr><th>Site</th><th>Jobs in feed</th><th>Feed file</th></tr></thead><tbody>
+<tr><td>OrlandoJobs.com</td><td>32</td><td><a href="orlandojobs.xml">orlandojobs.xml</a></td></tr>
+<tr><td>FortMyersJobs.com</td><td>4</td><td><a href="fortmyersjobs.xml">fortmyersjobs.xml</a></td></tr>
+<tr><td>ftn-orlando-rivet <span class="muted">(pass-through)</span></td><td>698</td><td><a href="ftn-orlando-rivet.xml">ftn-orlando-rivet.xml</a></td></tr>
+</tbody></table></div></section>
+<section aria-labelledby="clients"><h2 id="clients">Clients</h2><div class="card scroll"><table>
+<thead><tr><th>Client</th><th>Status</th><th>Connector</th><th>Jobs</th><th>New</th><th>Removed</th><th>Categories</th><th>Problems</th></tr></thead><tbody>
+<tr><td><a href="#c-exploria-resorts">Exploria Resorts</a></td><td><span class="pill live">live</span></td><td>Paycom</td><td>3</td><td>0</td><td>0</td><td><span class="ok">3 sure</span></td><td class="">1 job outside FL skipped</td></tr>
+<tr><td><a href="#c-lynx">LYNX</a></td><td><span class="pill live">live</span></td><td>Dayforce</td><td>7</td><td>0</td><td>0</td><td><span class="ok">5 sure</span>, <span class="warn">2 broad</span></td><td class=""><span class="ok">none</span></td></tr>
+<tr><td><a href="#c-city-of-casselberry">City of Casselberry</a></td><td><span class="pill test">test</span></td><td>Neogov</td><td>6</td><td>0</td><td>0</td><td><span class="ok">4 sure</span>, <span class="warn">2 broad</span></td><td class=""><span class="ok">none</span></td></tr>
+<tr><td><a href="#c-toho-water-authority">Toho Water Authority</a></td><td><span class="pill test">test</span></td><td>Neogov</td><td>16</td><td>0</td><td>0</td><td><span class="ok">7 sure</span>, <span class="warn">6 broad</span>, <span class="warn">3 default</span></td><td class=""><span class="ok">none</span></td></tr>
+<tr><td><a href="#c-orange-county-sheriff-s-office">Orange County Sheriff&#39;s Office</a></td><td><span class="pill test">test</span></td><td>Neogov</td><td>13</td><td>0</td><td>0</td><td><span class="ok">10 sure</span>, <span class="warn">1 broad</span>, <span class="warn">2 default</span></td><td class=""><span class="ok">none</span></td></tr>
+<tr><td><a href="#c-seminole-county-sheriff-s-office">Seminole County Sheriff&#39;s Office</a></td><td><span class="pill test">test</span></td><td>Neogov</td><td>3</td><td>0</td><td>0</td><td><span class="ok">3 sure</span></td><td class=""><span class="ok">none</span></td></tr>
+<tr><td><a href="#c-city-of-cape-coral">City of Cape Coral</a></td><td><span class="pill live">live</span></td><td>Neogov</td><td>4</td><td>0</td><td>0</td><td><span class="ok">3 sure</span>, <span class="warn">1 broad</span></td><td class=""><span class="ok">none</span></td></tr>
+<tr><td><a href="#c-lake-sumter-state-college">Lake-Sumter State College</a></td><td><span class="pill live">live</span></td><td>Neogov</td><td>22</td><td>0</td><td>0</td><td><span class="ok">17 sure</span>, <span class="warn">4 broad</span>, <span class="warn">1 default</span></td><td class=""><span class="ok">none</span></td></tr>
+</tbody></table></div></section>
+<section aria-labelledby="detail"><h2 id="detail">Client detail</h2>
+<article class="card" id="c-exploria-resorts">
+<details>
+<summary>Exploria Resorts <span class="pill live">live</span> <span class="muted">3 jobs · orlandojobs, fortmyersjobs, emeraldcoastjobs, tallahasseejobs, greatjaxjobs, gvillejobs, tampabayjobs, spacecoastjobs, fortlauderdalejobs, miamijobs · industry: Hospitality / Timeshare</span></summary>
+<p class="muted">Careers page: <a href="https://www.paycomonline.net/v4/ats/web.php/portal/1CEFDBC9E48D639BD88793C3E3A2CF1B/career-page" rel="nofollow noopener" target="_blank">https://www.paycomonline.net/v4/ats/web.php/portal/1CEFDBC9E48D639BD88793C3E3A2CF1B/career-page</a></p>
+<ul class="problems bad"><li>1 job outside FL skipped</li></ul>
+<div class="scroll"><table><thead><tr><th>Job</th><th>Location</th><th>Categories</th><th>Pay</th><th>Issues</th></tr></thead>
+<tbody><tr><td><a href="https://www.paycomonline.net/v4/ats/web.php/portal/1CEFDBC9E48D639BD88793C3E3A2CF1B/jobs/87556" rel="nofollow noopener" target="_blank">In-House Sales Manager</a></td><td>Clermont, Florida</td><td>FTN: Timeshare / Vacation Ownership; Sales / Business Development <span class="muted">(high)</span></td><td></td><td class=""></td></tr>
+<tr><td><a href="https://www.paycomonline.net/v4/ats/web.php/portal/1CEFDBC9E48D639BD88793C3E3A2CF1B/jobs/88246" rel="nofollow noopener" target="_blank">Sales Representative (Bilingual)</a></td><td>Daytona Beach, Florida</td><td>FTN: Timeshare / Vacation Ownership; Sales / Business Development; Sales Representative <span class="muted">(high)</span></td><td></td><td class=""></td></tr>
+<tr><td><a href="https://www.paycomonline.net/v4/ats/web.php/portal/1CEFDBC9E48D639BD88793C3E3A2CF1B/jobs/88996" rel="nofollow noopener" target="_blank">In-House Sales Representative</a></td><td>Clermont, Florida</td><td>FTN: Timeshare / Vacation Ownership; Sales / Business Development; Sales Representative <span class="muted">(high)</span></td><td></td><td class=""></td></tr></tbody></table></div>
+</details>
+</article>
+
+<article class="card" id="c-lynx">
+<details>
+<summary>LYNX <span class="pill live">live</span> <span class="muted">7 jobs · orlandojobs, fortmyersjobs, emeraldcoastjobs, tallahasseejobs, greatjaxjobs, gvillejobs, tampabayjobs, spacecoastjobs, fortlauderdalejobs, miamijobs · industry: Government / Public Transit</span></summary>
+<p class="muted">Careers page: <a href="https://jobs.dayforcehcm.com/en-US/lynxdf/CANDIDATEPORTAL" rel="nofollow noopener" target="_blank">https://jobs.dayforcehcm.com/en-US/lynxdf/CANDIDATEPORTAL</a></p>
+
+<div class="scroll"><table><thead><tr><th>Job</th><th>Location</th><th>Categories</th><th>Pay</th><th>Issues</th></tr></thead>
+<tbody><tr><td><a href="https://jobs.dayforcehcm.com/en-US/lynxdf/CANDIDATEPORTAL/jobs/4838" rel="nofollow noopener" target="_blank">Diesel Fleet Techncian B - Transit (CDL Permit/License Required)</a></td><td>Orlando, Florida</td><td>FTN: Diesel Mechanic; Construction &amp; Skilled Trades <span class="muted">(high)</span></td><td></td><td class=""></td></tr>
+<tr><td><a href="https://jobs.dayforcehcm.com/en-US/lynxdf/CANDIDATEPORTAL/jobs/4832" rel="nofollow noopener" target="_blank">TRANSIT BUS ELECTRONICS TECHNICAN (CDL Required)</a></td><td>Orlando, Florida</td><td>FTN: Logistics / Warehouse <span class="muted">(medium)</span></td><td></td><td class=""></td></tr>
+<tr><td><a href="https://jobs.dayforcehcm.com/en-US/lynxdf/CANDIDATEPORTAL/jobs/4817" rel="nofollow noopener" target="_blank">Diesel Mechanic Instructor</a></td><td>Orlando, Florida</td><td>FTN: Diesel Mechanic; Construction &amp; Skilled Trades <span class="muted">(high)</span></td><td></td><td class=""></td></tr>
+<tr><td><a href="https://jobs.dayforcehcm.com/en-US/lynxdf/CANDIDATEPORTAL/jobs/4474" rel="nofollow noopener" target="_blank">Senior HR Generalist - Employee &amp; Labor Relations</a></td><td>Orlando, Florida</td><td>FTN: Human Resources Generalist; Human Resources <span class="muted">(high)</span></td><td></td><td class=""></td></tr>
+<tr><td><a href="https://jobs.dayforcehcm.com/en-US/lynxdf/CANDIDATEPORTAL/jobs/4804" rel="nofollow noopener" target="_blank">Bus Operator A</a></td><td>Orlando, Florida</td><td>FTN: Bus Driver; Logistics / Warehouse <span class="muted">(high)</span></td><td></td><td class=""></td></tr>
+<tr><td><a href="https://jobs.dayforcehcm.com/en-US/lynxdf/CANDIDATEPORTAL/jobs/4230" rel="nofollow noopener" target="_blank">Senior Diesel Fleet Technician</a></td><td>Orlando, Florida</td><td>FTN: Diesel Mechanic; Construction &amp; Skilled Trades <span class="muted">(high)</span></td><td>$32.62–$38.38 / hour</td><td class=""></td></tr>
+<tr><td><a href="https://jobs.dayforcehcm.com/en-US/lynxdf/CANDIDATEPORTAL/jobs/4769" rel="nofollow noopener" target="_blank">BUS CLEANER/FUELER (CDL Class B REQUIRED)</a></td><td>Orlando, Florida</td><td>FTN: Logistics / Warehouse <span class="muted">(medium)</span></td><td>$24.07–$24.07 / hour</td><td class=""></td></tr></tbody></table></div>
+</details>
+</article>
+
+<article class="card" id="c-city-of-casselberry">
+<details open>
+<summary>City of Casselberry <span class="pill test">test</span> <span class="muted">6 jobs · orlandojobs · industry: Government / Public Safety</span></summary>
+<p class="muted">Careers page: <a href="https://www.governmentjobs.com/careers/casselberry" rel="nofollow noopener" target="_blank">https://www.governmentjobs.com/careers/casselberry</a></p>
+
+<div class="scroll"><table><thead><tr><th>Job</th><th>Location</th><th>Categories</th><th>Pay</th><th>Issues</th></tr></thead>
+<tbody><tr><td><a href="https://www.governmentjobs.com/careers/casselberry/jobs/5197225/stormwater-maintenance-worker" rel="nofollow noopener" target="_blank">Stormwater Maintenance Worker</a></td><td>Casselberry, Florida</td><td>FTN: Maintenance Technician; Construction &amp; Skilled Trades <span class="muted">(high)</span></td><td>$40582.0–$50727.0 / year</td><td class=""></td></tr>
+<tr><td><a href="https://www.governmentjobs.com/careers/casselberry/jobs/5346220/utility-technician-i-iv" rel="nofollow noopener" target="_blank">Utility Technician I-IV</a></td><td>Casselberry, Florida</td><td>FTN: Construction &amp; Skilled Trades <span class="muted">(medium)</span></td><td>$43381.0–$61286.0 / year</td><td class=""></td></tr>
+<tr><td><a href="https://www.governmentjobs.com/careers/casselberry/jobs/5326306/seasonal-recreation-worker" rel="nofollow noopener" target="_blank">Seasonal Recreation Worker</a></td><td>Casselberry, Florida</td><td>FTN: Hospitality / Tourism / Events <span class="muted">(medium)</span></td><td>$16.25–$18.0 / hour</td><td class=""></td></tr>
+<tr><td><a href="https://www.governmentjobs.com/careers/casselberry/jobs/5315087/utility-heavy-equipment-operator" rel="nofollow noopener" target="_blank">Utility Heavy Equipment Operator</a></td><td>Casselberry, Florida</td><td>FTN: Heavy Equipment Operator; Construction &amp; Skilled Trades <span class="muted">(high)</span></td><td>$49029.0–$61286.0 / year</td><td class=""></td></tr>
+<tr><td><a href="https://www.governmentjobs.com/careers/casselberry/jobs/5259698/utility-maintenance-worker" rel="nofollow noopener" target="_blank">Utility Maintenance Worker</a></td><td>Casselberry, Florida</td><td>FTN: Maintenance Technician; Construction &amp; Skilled Trades <span class="muted">(high)</span></td><td>$19.51–$24.39 / hour</td><td class=""></td></tr>
+<tr><td><a href="https://www.governmentjobs.com/careers/casselberry/jobs/5059265/police-officer" rel="nofollow noopener" target="_blank">Police Officer</a></td><td>Casselberry, Florida</td><td>FTN: Law Enforcement (Police / Deputy); Government / Public Safety <span class="muted">(high)</span></td><td>$64890.0–$97335.0 / year</td><td class=""></td></tr></tbody></table></div>
+</details>
+</article>
+
+<article class="card" id="c-toho-water-authority">
+<details open>
+<summary>Toho Water Authority <span class="pill test">test</span> <span class="muted">16 jobs · orlandojobs · industry: Government / Utilities</span></summary>
+<p class="muted">Careers page: <a href="https://www.governmentjobs.com/careers/tohowaterauthority" rel="nofollow noopener" target="_blank">https://www.governmentjobs.com/careers/tohowaterauthority</a></p>
+
+<div class="scroll"><table><thead><tr><th>Job</th><th>Location</th><th>Categories</th><th>Pay</th><th>Issues</th></tr></thead>
+<tbody><tr><td><a href="https://www.governmentjobs.com/careers/tohowaterauthority/jobs/5501706/intern-creative-services" rel="nofollow noopener" target="_blank">Intern - Creative Services</a></td><td>Kissimmee, Florida</td><td>FTN: Creative / Design / Architecture <span class="muted">(medium)</span></td><td>$17.87–$22.33 / hour</td><td class=""></td></tr>
+<tr><td><a href="https://www.governmentjobs.com/careers/tohowaterauthority/jobs/5501737/intern-public-relations" rel="nofollow noopener" target="_blank">Intern - Public Relations</a></td><td>Kissimmee, Florida</td><td>FTN: Public Relations (PR); Marketing / Communications / PR <span class="muted">(high)</span></td><td>$17.87–$22.33 / hour</td><td class=""></td></tr>
+<tr><td><a href="https://www.governmentjobs.com/careers/tohowaterauthority/jobs/5495413/accounting-supervisor-or-accounting-manager-capital-fixed-assets" rel="nofollow noopener" target="_blank">Accounting Supervisor or Accounting Manager - Capital &amp; Fixed Assets</a></td><td>Kissimmee, Florida</td><td>FTN: Accountant; Accounting / Finance / Banking <span class="muted">(high)</span></td><td>$83845.0–$134139.0 / year</td><td class=""></td></tr>
+<tr><td><a href="https://www.governmentjobs.com/careers/tohowaterauthority/jobs/5495442/utility-worker-biosolids" rel="nofollow noopener" target="_blank">Utility Worker (Biosolids)</a></td><td>Kissimmee, Florida</td><td>FTN: Construction &amp; Skilled Trades <span class="muted">(low)</span></td><td>$39769.6–$49712.0 / year</td><td class=""></td></tr>
+<tr><td><a href="https://www.governmentjobs.com/careers/tohowaterauthority/jobs/5493603/plant-mechanic-preventative-maintenance-ii-senior-or-master" rel="nofollow noopener" target="_blank">Plant Mechanic (Preventative Maintenance) - II, Senior, or Master</a></td><td>Kissimmee, Florida</td><td>FTN: Automotive Technician / Mechanic; Construction &amp; Skilled Trades <span class="muted">(high)</span></td><td>$52208.0–$95472.0 / year</td><td class=""></td></tr>
+<tr><td><a href="https://www.governmentjobs.com/careers/tohowaterauthority/jobs/5493589/senior-foreman-of-field-services-biosolids-department" rel="nofollow noopener" target="_blank">Senior Foreman of Field Services (Biosolids Department)</a></td><td>Kissimmee, Florida</td><td>FTN: Construction Superintendent; Construction &amp; Skilled Trades <span class="muted">(high)</span></td><td>$74880.0–$106953.6 / year</td><td class=""></td></tr>
+<tr><td><a href="https://www.governmentjobs.com/careers/tohowaterauthority/jobs/5493984/business-process-specialist-all-levels" rel="nofollow noopener" target="_blank">Business Process Specialist - All Levels</a></td><td>Kissimmee, Florida</td><td>FTN: Construction &amp; Skilled Trades <span class="muted">(low)</span></td><td>$55785.6–$95472.0 / year</td><td class=""></td></tr>
+<tr><td><a href="https://www.governmentjobs.com/careers/tohowaterauthority/jobs/5487328/programmer-analyst-ii-or-senior" rel="nofollow noopener" target="_blank">Programmer Analyst II or Senior</a></td><td>Kissimmee, Florida</td><td>FTN: Software Developer / Engineer; IT / Technology <span class="muted">(high)</span></td><td>$74880.0–$119787.2 / year</td><td class=""></td></tr>
+<tr><td><a href="https://www.governmentjobs.com/careers/tohowaterauthority/jobs/5479696/business-support-manager" rel="nofollow noopener" target="_blank">Business Support Manager</a></td><td>Kissimmee, Florida</td><td>FTN: Construction &amp; Skilled Trades <span class="muted">(low)</span></td><td>$83845.0–$119787.0 / year</td><td class=""></td></tr>
+<tr><td><a href="https://www.governmentjobs.com/careers/tohowaterauthority/jobs/5473172/water-treatment-operator-all-levels" rel="nofollow noopener" target="_blank">Water Treatment Operator - All Levels</a></td><td>Kissimmee, Florida</td><td>FTN: Industrial / Manufacturing <span class="muted">(medium)</span></td><td>$42556.8–$74339.2 / year</td><td class=""></td></tr>
+<tr><td><a href="https://www.governmentjobs.com/careers/tohowaterauthority/jobs/5472763/wastewater-treatment-operator-all-levels" rel="nofollow noopener" target="_blank">Wastewater Treatment Operator - All Levels</a></td><td>Kissimmee, Florida</td><td>FTN: Industrial / Manufacturing <span class="muted">(medium)</span></td><td>$42556.8–$95472.0 / year</td><td class=""></td></tr>
+<tr><td><a href="https://www.governmentjobs.com/careers/tohowaterauthority/jobs/5472798/lead-treatment-operator" rel="nofollow noopener" target="_blank">Lead Treatment Operator</a></td><td>Kissimmee, Florida</td><td>FTN: Industrial / Manufacturing <span class="muted">(medium)</span></td><td>$55785.6–$95472.0 / year</td><td class=""></td></tr>
+<tr><td><a href="https://www.governmentjobs.com/careers/tohowaterauthority/jobs/5462966/systems-maintenance-foreman-lift-stations" rel="nofollow noopener" target="_blank">Systems Maintenance Foreman (Lift Stations)</a></td><td>Kissimmee, Florida</td><td>FTN: Construction Superintendent; Construction &amp; Skilled Trades <span class="muted">(high)</span></td><td>$74880.0–$106953.6 / year</td><td class=""></td></tr>
+<tr><td><a href="https://www.governmentjobs.com/careers/tohowaterauthority/jobs/5397200/director-of-treatment-facility-engineering" rel="nofollow noopener" target="_blank">Director of Treatment Facility Engineering</a></td><td>Kissimmee, Florida</td><td>FTN: Engineering <span class="muted">(medium)</span></td><td>$135450.0–$193523.0 / year</td><td class=""></td></tr>
+<tr><td><a href="https://www.governmentjobs.com/careers/tohowaterauthority/jobs/5390626/scada-technician-i-ii-senior" rel="nofollow noopener" target="_blank">SCADA Technician - I, II &amp; Senior</a></td><td>Kissimmee, Florida</td><td>FTN: Construction &amp; Skilled Trades <span class="muted">(medium)</span></td><td>$59675.2–$106953.6 / year</td><td class=""></td></tr>
+<tr><td><a href="https://www.governmentjobs.com/careers/tohowaterauthority/jobs/5278663/electrician-all-levels" rel="nofollow noopener" target="_blank">Electrician- All Levels</a></td><td>Kissimmee, Florida</td><td>FTN: Electrician; Construction &amp; Skilled Trades <span class="muted">(high)</span></td><td>$48692.8–$95472.0 / year</td><td class=""></td></tr></tbody></table></div>
+</details>
+</article>
+
+<article class="card" id="c-orange-county-sheriff-s-office">
+<details open>
+<summary>Orange County Sheriff&#39;s Office <span class="pill test">test</span> <span class="muted">13 jobs · orlandojobs · industry: Government / Public Safety</span></summary>
+<p class="muted">Careers page: <a href="https://www.governmentjobs.com/careers/ocso" rel="nofollow noopener" target="_blank">https://www.governmentjobs.com/careers/ocso</a></p>
+
+<div class="scroll"><table><thead><tr><th>Job</th><th>Location</th><th>Categories</th><th>Pay</th><th>Issues</th></tr></thead>
+<tbody><tr><td><a href="https://www.governmentjobs.com/careers/ocso/jobs/5501565/administrative-assistant-i-communications" rel="nofollow noopener" target="_blank">Administrative Assistant I - Communications</a></td><td>Winter Park, Florida</td><td>FTN: Administrative Assistant; Administrative / Clerical <span class="muted">(high)</span></td><td>$40726.4–$40726.4 / year</td><td class=""></td></tr>
+<tr><td><a href="https://www.governmentjobs.com/careers/ocso/jobs/5346651/911-emergency-communications-specialist-i" rel="nofollow noopener" target="_blank">911 Emergency Communications Specialist I</a></td><td>Winter Park, Florida</td><td>FTN: Communications Specialist; Marketing / Communications / PR <span class="muted">(high)</span></td><td>$48068.0–$48068.0 / year</td><td class=""></td></tr>
+<tr><td><a href="https://www.governmentjobs.com/careers/ocso/jobs/5498361/it-specialist-i" rel="nofollow noopener" target="_blank">IT Specialist I</a></td><td>Orlando, Florida</td><td>FTN: IT / Technology <span class="muted">(medium)</span></td><td>$44886.4–$44886.4 / year</td><td class=""></td></tr>
+<tr><td><a href="https://www.governmentjobs.com/careers/ocso/jobs/5496100/fiscal-specialist" rel="nofollow noopener" target="_blank">Fiscal Specialist</a></td><td>Orlando, Florida</td><td>FTN: Government / Public Safety <span class="muted">(low)</span></td><td>$44886.4–$44886.4 / year</td><td class=""></td></tr>
+<tr><td><a href="https://www.governmentjobs.com/careers/ocso/jobs/5495507/electronic-surveillance-support-team-esst-analyst" rel="nofollow noopener" target="_blank">Electronic Surveillance Support Team (ESST) Analyst</a></td><td>Orlando, Florida</td><td>FTN: Government / Public Safety <span class="muted">(low)</span></td><td>$57387.2–$57387.2 / year</td><td class=""></td></tr>
+<tr><td><a href="https://www.governmentjobs.com/careers/ocso/jobs/5391049/aircraft-mechanic-part-time" rel="nofollow noopener" target="_blank">Aircraft Mechanic (Part-Time)</a></td><td>Orlando, Florida</td><td>FTN: Automotive Technician / Mechanic; Construction &amp; Skilled Trades; Avionics Technician <span class="muted">(high)</span></td><td></td><td class=""></td></tr>
+<tr><td><a href="https://www.governmentjobs.com/careers/ocso/jobs/5245857/automotive-technician-apprentice-part-time" rel="nofollow noopener" target="_blank">Automotive Technician Apprentice (Part-Time)</a></td><td>Orlando, Florida</td><td>FTN: Automotive Technician / Mechanic; Construction &amp; Skilled Trades <span class="muted">(high)</span></td><td>$19.58–$19.58 / hour</td><td class=""></td></tr>
+<tr><td><a href="https://www.governmentjobs.com/careers/ocso/jobs/5173827/deputy-sheriff-court-security" rel="nofollow noopener" target="_blank">Deputy Sheriff - Court Security</a></td><td>Orlando, Florida</td><td>FTN: Law Enforcement (Police / Deputy); Government / Public Safety <span class="muted">(high)</span></td><td>$70437.26–$70437.26 / year</td><td class=""></td></tr>
+<tr><td><a href="https://www.governmentjobs.com/careers/ocso/jobs/4949088/automotive-technician-i-ii-or-iii" rel="nofollow noopener" target="_blank">Automotive Technician, I, II, or III</a></td><td>Orlando, Florida</td><td>FTN: Automotive Technician / Mechanic; Construction &amp; Skilled Trades <span class="muted">(high)</span></td><td></td><td class=""></td></tr>
+<tr><td><a href="https://www.governmentjobs.com/careers/ocso/jobs/4352620/deputy-sheriff-school-resource-officer" rel="nofollow noopener" target="_blank">Deputy Sheriff - School Resource Officer</a></td><td>Orlando, Florida</td><td>FTN: Law Enforcement (Police / Deputy); Government / Public Safety <span class="muted">(high)</span></td><td>$70437.26–$70437.26 / year</td><td class=""></td></tr>
+<tr><td><a href="https://www.governmentjobs.com/careers/ocso/jobs/4351949/academy-sponsorship-deputy-sheriff-recruit" rel="nofollow noopener" target="_blank">Academy Sponsorship - Deputy Sheriff Recruit</a></td><td>Orlando, Florida</td><td>FTN: Law Enforcement (Police / Deputy); Government / Public Safety <span class="muted">(high)</span></td><td>$24.5–$24.5 / hour</td><td class=""></td></tr>
+<tr><td><a href="https://www.governmentjobs.com/careers/ocso/jobs/4352089/deputy-sheriff-patrol" rel="nofollow noopener" target="_blank">Deputy Sheriff - Patrol</a></td><td>Orlando, Florida</td><td>FTN: Law Enforcement (Police / Deputy); Government / Public Safety <span class="muted">(high)</span></td><td>$70437.26–$70437.26 / year</td><td class=""></td></tr>
+<tr><td><a href="https://www.governmentjobs.com/careers/ocso/jobs/2188680/school-crossing-guard" rel="nofollow noopener" target="_blank">School Crossing Guard</a></td><td>Orlando, Florida</td><td>FTN: Security Officer; Government / Public Safety <span class="muted">(high)</span></td><td>$18.18–$18.18 / hour</td><td class=""></td></tr></tbody></table></div>
+</details>
+</article>
+
+<article class="card" id="c-seminole-county-sheriff-s-office">
+<details open>
+<summary>Seminole County Sheriff&#39;s Office <span class="pill test">test</span> <span class="muted">3 jobs · orlandojobs · industry: Government / Public Safety</span></summary>
+<p class="muted">Careers page: <a href="https://www.governmentjobs.com/careers/seminolesheriff" rel="nofollow noopener" target="_blank">https://www.governmentjobs.com/careers/seminolesheriff</a></p>
+
+<div class="scroll"><table><thead><tr><th>Job</th><th>Location</th><th>Categories</th><th>Pay</th><th>Issues</th></tr></thead>
+<tbody><tr><td><a href="https://www.governmentjobs.com/careers/seminolesheriff/jobs/5419400/school-crossing-guard" rel="nofollow noopener" target="_blank">School Crossing Guard</a></td><td>Sanford, Florida</td><td>FTN: Security Officer; Government / Public Safety <span class="muted">(high)</span></td><td>$17.04–$17.04 / hour</td><td class=""></td></tr>
+<tr><td><a href="https://www.governmentjobs.com/careers/seminolesheriff/jobs/5379631/certified-nurse-assistant-cna" rel="nofollow noopener" target="_blank">Certified Nurse Assistant (CNA)</a></td><td>Sanford, Florida</td><td>FTN: CNA / Caregiver; Healthcare <span class="muted">(high)</span></td><td>$39020.8–$39020.8 / year</td><td class=""></td></tr>
+<tr><td><a href="https://www.governmentjobs.com/careers/seminolesheriff/jobs/5185647/licensed-practical-nurse-evening-shift" rel="nofollow noopener" target="_blank">Licensed Practical Nurse, Evening Shift</a></td><td>Sanford, Florida</td><td>FTN: LPN / LVN; Healthcare <span class="muted">(high)</span></td><td>$57137.6–$69180.8 / year</td><td class=""></td></tr></tbody></table></div>
+</details>
+</article>
+
+<article class="card" id="c-city-of-cape-coral">
+<details>
+<summary>City of Cape Coral <span class="pill live">live</span> <span class="muted">4 jobs · fortmyersjobs, orlandojobs, emeraldcoastjobs, tallahasseejobs, greatjaxjobs, gvillejobs, tampabayjobs, spacecoastjobs, fortlauderdalejobs, miamijobs · industry: Government / Public Safety</span></summary>
+<p class="muted">Careers page: <a href="https://www.governmentjobs.com/careers/capecoral" rel="nofollow noopener" target="_blank">https://www.governmentjobs.com/careers/capecoral</a></p>
+
+<div class="scroll"><table><thead><tr><th>Job</th><th>Location</th><th>Categories</th><th>Pay</th><th>Issues</th></tr></thead>
+<tbody><tr><td><a href="https://www.governmentjobs.com/careers/capecoral/jobs/5498323/service-worker-iii-utilities-collection-distribution-9461" rel="nofollow noopener" target="_blank">Service Worker III / Utilities / Collection &amp; Distribution</a></td><td>Cape Coral, Florida</td><td>FTN: Customer Service / Call Center <span class="muted">(medium)</span></td><td>$47840.0–$74880.0 / year</td><td class=""></td></tr>
+<tr><td><a href="https://www.governmentjobs.com/careers/capecoral/jobs/5496799/contract-administrative-technician-city-clerk-rental-registration-9462" rel="nofollow noopener" target="_blank">Contract Administrative Technician / City Clerk / Rental Registration</a></td><td>Cape Coral, Florida</td><td>FTN: Administrative Assistant; Administrative / Clerical <span class="muted">(high)</span></td><td>$15.0–$18.59 / hour</td><td class=""></td></tr>
+<tr><td><a href="https://www.governmentjobs.com/careers/capecoral/jobs/5447930/plans-examiner-ii-iii-plumbing-mechanical-development-services-building" rel="nofollow noopener" target="_blank">Plans Examiner II, III - Plumbing / Mechanical / Development Services / Building</a></td><td>Cape Coral, Florida</td><td>FTN: Plumber; Construction &amp; Skilled Trades <span class="muted">(high)</span></td><td>$61089.6–$110635.2 / year</td><td class=""></td></tr>
+<tr><td><a href="https://www.governmentjobs.com/careers/capecoral/jobs/5394454/oasis-charter-schools-substitute-teacher-9358" rel="nofollow noopener" target="_blank">Oasis Charter Schools- Substitute Teacher</a></td><td>Cape Coral, Florida</td><td>FTN: Substitute Teacher; Education / Training <span class="muted">(high)</span></td><td>$22.0–$27.0 / hour</td><td class=""></td></tr></tbody></table></div>
+</details>
+</article>
+
+<article class="card" id="c-lake-sumter-state-college">
+<details>
+<summary>Lake-Sumter State College <span class="pill live">live</span> <span class="muted">22 jobs · orlandojobs, fortmyersjobs, emeraldcoastjobs, tallahasseejobs, greatjaxjobs, gvillejobs, tampabayjobs, spacecoastjobs, fortlauderdalejobs, miamijobs · industry: Education / Higher Education</span></summary>
+<p class="muted">Careers page: <a href="https://www.schooljobs.com/careers/lsscedu ; https://www.schooljobs.com/careers/lsscedu/promotionaljobs" rel="nofollow noopener" target="_blank">https://www.schooljobs.com/careers/lsscedu ; https://www.schooljobs.com/careers/lsscedu/promotionaljobs</a></p>
+
+<div class="scroll"><table><thead><tr><th>Job</th><th>Location</th><th>Categories</th><th>Pay</th><th>Issues</th></tr></thead>
+<tbody><tr><td><a href="https://www.schooljobs.com/careers/lsscedu/jobs/5503125/assistant-director-financial-aid-customer-service-outreach" rel="nofollow noopener" target="_blank">Assistant Director, Financial Aid Customer Service &amp; Outreach</a></td><td>Leesburg, Florida</td><td>FTN: Customer Service Representative; Customer Service / Call Center <span class="muted">(high)</span></td><td>$55000.0–$60000.0 / year</td><td class=""></td></tr>
+<tr><td><a href="https://www.schooljobs.com/careers/lsscedu/jobs/5496079/specialist-payroll" rel="nofollow noopener" target="_blank">Specialist, Payroll</a></td><td>Leesburg, Florida</td><td>FTN: Payroll Specialist; Accounting / Finance / Banking <span class="muted">(high)</span></td><td>$45000.0–$50000.0 / year</td><td class=""></td></tr>
+<tr><td><a href="https://www.schooljobs.com/careers/lsscedu/jobs/5492047/instructor-nursing-asn" rel="nofollow noopener" target="_blank">Instructor, Nursing ASN</a></td><td>Leesburg, Florida</td><td>FTN: Healthcare; Education / Training <span class="muted">(medium)</span></td><td>$57000.0–$63500.0 / year</td><td class=""></td></tr>
+<tr><td><a href="https://www.schooljobs.com/careers/lsscedu/jobs/5492072/specialist-i-enrollment-services" rel="nofollow noopener" target="_blank">Specialist I, Enrollment Services</a></td><td>Clermont, Florida</td><td>FTN: Education / Training <span class="muted">(medium)</span></td><td>$37000.0–$40000.0 / year</td><td class=""></td></tr>
+<tr><td><a href="https://www.schooljobs.com/careers/lsscedu/jobs/5489961/accountant" rel="nofollow noopener" target="_blank">Accountant</a></td><td>Leesburg, Florida</td><td>FTN: Accountant; Accounting / Finance / Banking <span class="muted">(high)</span></td><td>$55000.0–$65000.0 / year</td><td class=""></td></tr>
+<tr><td><a href="https://www.schooljobs.com/careers/lsscedu/jobs/5471142/advisor-i-career-services" rel="nofollow noopener" target="_blank">Advisor I, Career Services</a></td><td>Clermont, Florida</td><td>FTN: Education / Training <span class="muted">(low)</span></td><td>$50000.0–$50000.0 / year</td><td class=""></td></tr>
+<tr><td><a href="https://www.schooljobs.com/careers/lsscedu/jobs/5438479/laboratory-assistant-medical-laboratory-technology" rel="nofollow noopener" target="_blank">Laboratory Assistant, Medical Laboratory Technology</a></td><td>Clermont, Florida</td><td>FTN: Laboratory Technician; Science, Biotech &amp; Research <span class="muted">(high)</span></td><td>$38500.0–$38500.0 / year</td><td class=""></td></tr>
+<tr><td><a href="https://www.schooljobs.com/careers/lsscedu/jobs/5395912/director-of-procurement-auxiliary-services" rel="nofollow noopener" target="_blank">Director of Procurement &amp; Auxiliary Services</a></td><td>Leesburg, Florida</td><td>FTN: Logistics / Warehouse <span class="muted">(medium)</span></td><td>$65000.0–$75000.0 / year</td><td class=""></td></tr>
+<tr><td><a href="https://www.schooljobs.com/careers/lsscedu/jobs/5299329/dean-humanities-social-sciences-visual-arts" rel="nofollow noopener" target="_blank">Dean, Humanities, Social Sciences &amp; Visual Arts</a></td><td>Leesburg, Florida</td><td>FTN: Science, Biotech &amp; Research; Social Service / Non Profit <span class="muted">(medium)</span></td><td>$85000.0–$100000.0 / year</td><td class=""></td></tr>
+<tr><td><a href="https://www.schooljobs.com/careers/lsscedu/jobs/5260602/adjunct-faculty-engineering" rel="nofollow noopener" target="_blank">Adjunct (Faculty) – Engineering</a></td><td>Clermont, Florida</td><td>FTN: Adjunct / Professor; Education / Training <span class="muted">(high)</span></td><td></td><td class=""></td></tr>
+<tr><td><a href="https://www.schooljobs.com/careers/lsscedu/jobs/5471507/adjunct-faculty-music" rel="nofollow noopener" target="_blank">Adjunct Faculty - Music</a></td><td>Clermont, Florida</td><td>FTN: Adjunct / Professor; Education / Training <span class="muted">(high)</span></td><td></td><td class=""></td></tr>
+<tr><td><a href="https://www.schooljobs.com/careers/lsscedu/jobs/5460242/adjunct-faculty-adjunct-chemistry" rel="nofollow noopener" target="_blank">Adjunct (Faculty) – Adjunct, Chemistry</a></td><td>Clermont, Florida</td><td>FTN: Adjunct / Professor; Education / Training <span class="muted">(high)</span></td><td></td><td class=""></td></tr>
+<tr><td><a href="https://www.schooljobs.com/careers/lsscedu/jobs/5419020/adjunct-real-estate-development-design" rel="nofollow noopener" target="_blank">Adjunct, Real Estate Development &amp; Design</a></td><td>Clermont, Florida</td><td>FTN: Adjunct / Professor; Education / Training <span class="muted">(high)</span></td><td></td><td class=""></td></tr>
+<tr><td><a href="https://www.schooljobs.com/careers/lsscedu/jobs/5419046/adjunct-faculty-biology" rel="nofollow noopener" target="_blank">Adjunct (Faculty) – Biology</a></td><td>Clermont, Florida</td><td>FTN: Adjunct / Professor; Education / Training <span class="muted">(high)</span></td><td></td><td class=""></td></tr>
+<tr><td><a href="https://www.schooljobs.com/careers/lsscedu/jobs/5365015/adjunct-faculty-political-science" rel="nofollow noopener" target="_blank">Adjunct (Faculty) – Political Science</a></td><td>Clermont, Florida</td><td>FTN: Adjunct / Professor; Education / Training <span class="muted">(high)</span></td><td></td><td class=""></td></tr>
+<tr><td><a href="https://www.schooljobs.com/careers/lsscedu/jobs/5063094/adjunct-mathematics" rel="nofollow noopener" target="_blank">Adjunct, Mathematics</a></td><td>Clermont, Florida</td><td>FTN: Adjunct / Professor; Education / Training <span class="muted">(high)</span></td><td></td><td class=""></td></tr>
+<tr><td><a href="https://www.schooljobs.com/careers/lsscedu/jobs/5269138/adjunct-faculty-humanities" rel="nofollow noopener" target="_blank">Adjunct Faculty - Humanities</a></td><td>Clermont, Florida</td><td>FTN: Adjunct / Professor; Education / Training <span class="muted">(high)</span></td><td></td><td class=""></td></tr>
+<tr><td><a href="https://www.schooljobs.com/careers/lsscedu/jobs/5126653/adjunct-respiratory-care" rel="nofollow noopener" target="_blank">Adjunct - Respiratory Care</a></td><td>Clermont, Florida</td><td>FTN: Adjunct / Professor; Education / Training <span class="muted">(high)</span></td><td></td><td class=""></td></tr>
+<tr><td><a href="https://www.schooljobs.com/careers/lsscedu/jobs/5217464/non-credit-adjunct-instructor-electrical-distribution" rel="nofollow noopener" target="_blank">Non-Credit (Adjunct) Instructor, Electrical Distribution</a></td><td>Sumterville, Florida</td><td>FTN: Adjunct / Professor; Education / Training <span class="muted">(high)</span></td><td>$50.0–$50.0 / hour</td><td class=""></td></tr>
+<tr><td><a href="https://www.schooljobs.com/careers/lsscedu/jobs/5044218/adjunct-faculty-english" rel="nofollow noopener" target="_blank">Adjunct (Faculty) - English</a></td><td>Clermont, Florida</td><td>FTN: Adjunct / Professor; Education / Training <span class="muted">(high)</span></td><td></td><td class=""></td></tr>
+<tr><td><a href="https://www.schooljobs.com/careers/lsscedu/jobs/4485949/adjunct-asn-nursing-clinical" rel="nofollow noopener" target="_blank">Adjunct - ASN Nursing Clinical</a></td><td>Clermont, Florida</td><td>FTN: Adjunct / Professor; Education / Training <span class="muted">(high)</span></td><td>$50000.0–$50000.0 / year</td><td class=""></td></tr>
+<tr><td><a href="https://www.schooljobs.com/careers/lsscedu/jobs/4478204/adjunct-engineering" rel="nofollow noopener" target="_blank">Adjunct , Engineering</a></td><td>Clermont, Florida</td><td>FTN: Adjunct / Professor; Education / Training <span class="muted">(high)</span></td><td></td><td class=""></td></tr></tbody></table></div>
+</details>
+</article>
+
+</section>
+</main>
+</body>
+</html>
