@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="SpaceCoastJobs (Rivet client feed, cleaned): before and after cleaning, by company, with examples.">
+<title>SpaceCoastJobs (Rivet client feed, cleaned) Test</title>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"SpaceCoastJobs (Rivet client feed, cleaned) Test","dateModified":"2026-10-24T12:58:33Z","publisher":{"@type":"Organization","name":"Great Job Spot, Inc."}}</script>
+<style>
+:root{--bg:#f7f7f5;--fg:#1d1d1b;--muted:#6b6b66;--card:#fff;--line:#e3e2dd;--ok:#1f7a4d;--warn:#a15c00;--bad:#b3261e;--accent:#0b5cad;--soft:#eef4fb}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#161615;--fg:#ecebe6;--muted:#a3a29c;--card:#1f1f1d;--line:#34332f;--ok:#5cc28f;--warn:#e0a54a;--bad:#f07b72;--accent:#6aa9ec;--soft:#1d2733}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+main{max-width:1100px;margin:0 auto;padding:24px 16px 64px}h1{font-size:24px;margin:0 0 4px}h2{font-size:18px;margin:32px 0 8px}h3{font-size:15px;margin:16px 0 6px}
+.muted{color:var(--muted)}.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;margin:12px 0}
+table{width:100%;border-collapse:collapse;font-size:14px}th,td{text-align:left;padding:7px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-weight:600;color:var(--muted)}td.n,th.n{text-align:right;white-space:nowrap}.scroll{overflow-x:auto}
+.ok{color:var(--ok)}.warn{color:var(--warn)}.bad{color:var(--bad)}a{color:var(--accent)}
+details summary{cursor:pointer;font-weight:600;margin:4px 0}.arrow{color:var(--muted);padding:0 6px}
+.preview{background:var(--soft);border-radius:8px;padding:12px 14px;margin:8px 0}.preview h3{margin-top:4px}
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>SpaceCoastJobs (Rivet client feed, cleaned)</h1>
+<p class="muted">Test, updated Oct 24, 2026 8:58 AM. Jobiqo is not reading this feed yet. Source: <a href="https://rivet.greatjobspot.com/jobiqo/sites/74abccc2-bdbf-46a2-992c-26a418007db7/site-feeds/latest.xml">Rivet feed</a>. Cleaned feed: <a href="ftn-spacecoast-clean.xml">ftn-spacecoast-clean.xml</a>.</p>
+<p>Same jobs, same AdNumbers. If Jobiqo's feed URL is switched to the cleaned feed, every job updates in place: same job pages, no new jobs.</p>
+</header>
+<section aria-labelledby="headline"><h2 id="headline">Before and after</h2><div class="card scroll"><table>
+<thead><tr><th>What</th><th class="n">Rivet feed today</th><th class="n">Cleaned</th><th>Note</th></tr></thead><tbody>
+<tr><td>Jobs</td><td class="n">117</td><td class="n">117</td><td class="muted">0 removed (see below)</td></tr>
+<tr><td>Jobs with a category</td><td class="n">102 <span class="muted">(87%)</span></td><td class="n">110 <span class="muted">(94%)</span></td><td class="muted">The engine&#39;s category rules, same as the Orlando feed</td></tr>
+<tr><td>Location includes the city</td><td class="n">117 <span class="muted">(100%)</span></td><td class="n">117 <span class="muted">(100%)</span></td><td class="muted">Allstate sent &quot;Illinois&quot; instead of &quot;Chicago, Illinois&quot;; ZIPs moved to their own field</td></tr>
+<tr><td>Marked remote</td><td class="n">0 <span class="muted">(0%)</span></td><td class="n">1 <span class="muted">(1%)</span></td><td class="muted">Titles saying Remote now flagged as remote</td></tr>
+<tr><td>Pay as a separate field (shown by Google)</td><td class="n">0</td><td class="n">11 <span class="muted">(9%)</span></td><td class="muted">Taken from the description when the posting states it</td></tr>
+<tr><td>Titles</td><td class="n">as sent</td><td class="n">unchanged</td><td class="muted">Kept as sent so job URLs do not change (Jobiqo breaks the old URL when a title changes)</td></tr>
+<tr><td>Garbled characters (ERIEÃ¢Â€Â™s)</td><td class="n">0</td><td class="n">0</td><td class="muted"></td></tr>
+<tr><td>No apply link</td><td class="n">0</td><td class="n">0</td><td class="muted">Dead ends for candidates</td></tr>
+<tr><td>Empty description</td><td class="n">0</td><td class="n">0</td><td class="muted"></td></tr>
+<tr><td>Exact duplicates</td><td class="n">0</td><td class="n">0</td><td class="muted">Same title, city and apply link</td></tr>
+<tr><td>Outside the US</td><td class="n">0</td><td class="n">0</td><td class="muted"></td></tr>
+<tr><td>Quick facts block (test half)</td><td class="n">0</td><td class="n">0 of 0</td><td class="muted">Half the jobs, so Search Console can compare against the other half</td></tr>
+<tr><td>AI &quot;About this job&quot; summary (test half)</td><td class="n">0</td><td class="n">0 of 0</td><td class="muted">100 written per run until all are done</td></tr>
+</tbody></table></div></section>
+
+<section aria-labelledby="cats"><h2 id="cats">Categories after cleaning</h2><div class="card scroll">
+<p class="muted">Specific category (e.g. Claims Adjuster): 74. Main category only (e.g. Claims): 36. None: 7.</p>
+<table><thead><tr><th>Category</th><th class="n">Jobs</th></tr></thead><tbody>
+<tr><td>Healthcare</td><td class="n">72</td></tr>
+<tr><td>Administrative / Clerical</td><td class="n">11</td></tr>
+<tr><td>Social Service / Non Profit</td><td class="n">10</td></tr>
+<tr><td>Construction &amp; Skilled Trades</td><td class="n">7</td></tr>
+<tr><td>Education / Training</td><td class="n">5</td></tr>
+<tr><td>Sales / Business Development</td><td class="n">5</td></tr>
+<tr><td>Science, Biotech &amp; Research</td><td class="n">4</td></tr>
+<tr><td>Government / Public Safety</td><td class="n">3</td></tr>
+<tr><td>Customer Service / Call Center</td><td class="n">2</td></tr>
+<tr><td>IT / Technology</td><td class="n">2</td></tr>
+<tr><td>Logistics / Warehouse</td><td class="n">1</td></tr>
+<tr><td>Legal</td><td class="n">1</td></tr>
+<tr><td>Hospitality / Tourism / Events</td><td class="n">1</td></tr>
+<tr><td class="warn">No category</td><td class="n">7</td></tr>
+</tbody></table></div></section>
+
+<section aria-labelledby="hs"><h2 id="hs">Home site by city</h2><div class="card scroll">
+<p class="muted">Each job's Google credit goes to the FTN site for its city, the same as the Orlando feed.</p>
+<table><thead><tr><th>Home site</th><th class="n">Jobs</th></tr></thead><tbody>
+<tr><td>spacecoastjobs</td><td class="n">117</td></tr>
+</tbody></table></div></section>
+
+<section aria-labelledby="cos"><h2 id="cos">By company</h2><div class="card scroll"><table>
+<thead><tr><th>Company <span class="muted">(job system)</span></th><th class="n">Jobs before</th><th class="n">After</th><th class="n">Removed</th><th class="n">Category before</th><th class="n">After</th><th class="n">Pay found</th><th class="n">Titles cleaned</th><th class="n">Remote fixed</th></tr></thead><tbody>
+<tr><td>Parrish Medical Center<br><span class="muted">careers.parrishhealthcare.com</span></td><td class="n">95</td><td class="n">95</td><td class="n">0</td><td class="n">93%</td><td class="n">97%</td><td class="n">0</td><td class="n">0</td><td class="n">0</td></tr>
+<tr><td>Family Partnerships of Central Florida<br><span class="muted">j.brt.mv</span></td><td class="n">12</td><td class="n">12</td><td class="n">0</td><td class="n">33%</td><td class="n">67%</td><td class="n">7</td><td class="n">0</td><td class="n">0</td></tr>
+<tr><td>YMCA of Central Florida<br><span class="muted">recruiting.paylocity.com</span></td><td class="n">6</td><td class="n">6</td><td class="n">0</td><td class="n">100%</td><td class="n">100%</td><td class="n">1</td><td class="n">0</td><td class="n">0</td></tr>
+<tr><td>Allstate Insurance<br><span class="muted">allstateinsurance.contacthr.com</span></td><td class="n">2</td><td class="n">2</td><td class="n">0</td><td class="n">100%</td><td class="n">100%</td><td class="n">2</td><td class="n">0</td><td class="n">0</td></tr>
+<tr><td>Liberty Mutual Insurance<br><span class="muted">searchjobs.libertymutualgroup.com</span></td><td class="n">1</td><td class="n">1</td><td class="n">0</td><td class="n">100%</td><td class="n">100%</td><td class="n">1</td><td class="n">0</td><td class="n">1</td></tr>
+<tr><td>PRP Wine<br><span class="muted">prpwineinternationalinc.applytojob.com</span></td><td class="n">1</td><td class="n">1</td><td class="n">0</td><td class="n">100%</td><td class="n">100%</td><td class="n">0</td><td class="n">0</td><td class="n">0</td></tr>
+</tbody></table></div></section>
+
+<section aria-labelledby="ex"><h2 id="ex">Examples</h2><div class="card scroll">
+<details open><summary>Categories (Rivet's category, then the engine's)</summary><table><thead><tr><th>Title</th><th>Rivet</th><th>Engine</th></tr></thead><tbody>
+<tr><td>Independent Living Case Manager- Brevard<br><span class="muted">Family Partnerships of Central Florida</span></td><td>none</td><td>Case Manager, Social Service / Non Profit</td></tr>
+<tr><td>Nursing House Supervisor<br><span class="muted">Parrish Medical Center</span></td><td>Accounting / Finance / Banking, Healthcare, Sales / Business Development</td><td>Healthcare</td></tr>
+<tr><td>Emergency Medical Technician EMT or Paramedic<br><span class="muted">Parrish Medical Center</span></td><td>Healthcare</td><td>EMT / Paramedic, Government / Public Safety</td></tr>
+<tr><td>Patient Access Specialist I<br><span class="muted">Parrish Medical Center</span></td><td>none</td><td>Medical Receptionist, Healthcare</td></tr>
+<tr><td>General Mechanic<br><span class="muted">Parrish Medical Center</span></td><td>Construction &amp; Skilled Trades, Engineering, Healthcare</td><td>Automotive Technician / Mechanic, Construction &amp; Skilled Trades</td></tr>
+<tr><td>Aquatics Director, Titusville YMCA Family Center<br><span class="muted">YMCA of Central Florida</span></td><td>Sales / Business Development</td><td>Social Service / Non Profit</td></tr>
+<tr><td>Advanced Nurse Practitioner APRN Primary Care<br><span class="muted">Parrish Medical Center</span></td><td>Healthcare</td><td>Nurse Practitioner, Healthcare</td></tr>
+<tr><td>Mammography Technologist<br><span class="muted">Parrish Medical Center</span></td><td>Healthcare</td><td>Radiology / MRI Tech, Healthcare</td></tr>
+<tr><td>Patient Account Representative<br><span class="muted">Parrish Medical Center</span></td><td>none</td><td>Healthcare</td></tr>
+<tr><td>Direct Sales Agent Specialist (2516) - Direct Auto<br><span class="muted">Allstate Insurance</span></td><td>Sales / Business Development</td><td>Sales Representative, Sales / Business Development</td></tr>
+<tr><td>Pharmacy Operations Manager<br><span class="muted">Parrish Medical Center</span></td><td>Healthcare</td><td>Healthcare</td></tr>
+<tr><td>Medical Technologist<br><span class="muted">Parrish Medical Center</span></td><td>Healthcare</td><td>Medical Technologist (ASCP), Science, Biotech &amp; Research</td></tr>
+<tr><td>Registered Radiology Technologist<br><span class="muted">Parrish Medical Center</span></td><td>Healthcare</td><td>Radiology / MRI Tech, Healthcare</td></tr>
+<tr><td>Advanced Nurse Practitioner APRN or Physician Assistant PA Urology<br><span class="muted">Parrish Medical Center</span></td><td>Healthcare</td><td>Nurse Practitioner, Healthcare, Physician / Medical Director</td></tr>
+<tr><td>Sleep Technologist RPSGT<br><span class="muted">Parrish Medical Center</span></td><td>Customer Service / Call Center, Healthcare</td><td>Customer Service / Call Center, Healthcare</td></tr>
+<tr><td>Manager, Perioperative Services<br><span class="muted">Parrish Medical Center</span></td><td>Healthcare</td><td>Healthcare</td></tr>
+<tr><td>Cardiovascular Invasive Registered Nurse<br><span class="muted">Parrish Medical Center</span></td><td>Healthcare</td><td>Registered Nurse (RN), Healthcare</td></tr>
+<tr><td>Member Engagement Representative, Parrish Health &amp; Fitness Operated by the YMCA of Central Florida<br><span class="muted">YMCA of Central Florida</span></td><td>Customer Service / Call Center</td><td>Social Service / Non Profit</td></tr>
+<tr><td>Childcare Teacher Assistant<br><span class="muted">Parrish Medical Center</span></td><td>Administrative / Clerical, Education / Training</td><td>Education / Training, Administrative / Clerical</td></tr>
+<tr><td>HVAC Mechanic<br><span class="muted">Parrish Medical Center</span></td><td>Healthcare</td><td>HVAC Technician, Construction &amp; Skilled Trades</td></tr>
+<tr><td>Unit Secretary Monitor Technician<br><span class="muted">Parrish Medical Center</span></td><td>Healthcare, IT / Technology</td><td>Administrative Assistant, Administrative / Clerical</td></tr>
+<tr><td>Emergency Medicine Technician EMT or Paramedic<br><span class="muted">Parrish Medical Center</span></td><td>Healthcare</td><td>EMT / Paramedic, Government / Public Safety</td></tr>
+<tr><td>Operating Room Assistant<br><span class="muted">Parrish Medical Center</span></td><td>none</td><td>Administrative / Clerical</td></tr>
+<tr><td>MRI Technologist<br><span class="muted">Parrish Medical Center</span></td><td>Healthcare</td><td>Radiology / MRI Tech, Healthcare</td></tr>
+<tr><td>Family Support Worker<br><span class="muted">Family Partnerships of Central Florida</span></td><td>Administrative / Clerical</td><td>Social Service / Non Profit</td></tr>
+<tr><td>Certified Surgical Scrub Technician<br><span class="muted">Parrish Medical Center</span></td><td>Healthcare</td><td>Healthcare, Construction &amp; Skilled Trades</td></tr>
+<tr><td>Charge Registered Nurse<br><span class="muted">Parrish Medical Center</span></td><td>Healthcare</td><td>Registered Nurse (RN), Healthcare</td></tr>
+<tr><td>Licensed Practical Nurse LPN<br><span class="muted">Parrish Medical Center</span></td><td>Healthcare</td><td>LPN / LVN, Healthcare</td></tr>
+<tr><td>BBHE Care Coordinator-NCFIE<br><span class="muted">Family Partnerships of Central Florida</span></td><td>none</td><td>Case Manager, Social Service / Non Profit</td></tr>
+<tr><td>Referee/Official Youth Sports, Titusville YMCA Family Center<br><span class="muted">YMCA of Central Florida</span></td><td>Healthcare</td><td>Social Service / Non Profit</td></tr>
+</tbody></table></details>
+<details><summary>Titles (0 cleaned)</summary><table><tbody>
+
+</tbody></table></details>
+<details><summary>Locations</summary><table><tbody>
+<tr><td>Palm Bay, Florida 32905</td><td><span class="arrow">&rarr;</span>Palm Bay, Florida <span class="muted">ZIP 32905</span></td></tr>
+<tr><td>Melbourne, Florida 32935</td><td><span class="arrow">&rarr;</span>Melbourne, Florida <span class="muted">ZIP 32935</span></td></tr>
+</tbody></table></details>
+</div></section>
+
+
+<section aria-labelledby="dr"><h2 id="dr">Removed (0)</h2><div class="card scroll">
+
+</div></section>
+
+<section aria-labelledby="nc"><h2 id="nc">Still no category (7)</h2><div class="card scroll">
+<p class="muted">Mostly non-insurance roles (country club staff, investments). Rules get added as they come up.</p>
+<details><summary>Show</summary><table><tbody><tr><td>Manager of Quality/Risk Management</td><td class="muted">Parrish Medical Center</td></tr><tr><td>Physican Coder</td><td class="muted">Parrish Medical Center</td></tr><tr><td>Care Manager Supervisor</td><td class="muted">Family Partnerships of Central Florida</td></tr><tr><td>Case Management Operations Specialist</td><td class="muted">Family Partnerships of Central Florida</td></tr><tr><td>ICPC/OCS Care Manager</td><td class="muted">Family Partnerships of Central Florida</td></tr><tr><td>General Contract and Executive Business Specialist</td><td class="muted">Parrish Medical Center</td></tr><tr><td>Care Manager Certified</td><td class="muted">Family Partnerships of Central Florida</td></tr></tbody></table></details>
+</div></section>
+
+</main>
+</body>
+</html>
