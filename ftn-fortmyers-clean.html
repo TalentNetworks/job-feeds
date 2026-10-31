@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="FortMyersJobs (Rivet client feed, cleaned): before and after cleaning, by company, with examples.">
+<title>FortMyersJobs (Rivet client feed, cleaned) Test</title>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"FortMyersJobs (Rivet client feed, cleaned) Test","dateModified":"2026-10-31T20:02:10Z","publisher":{"@type":"Organization","name":"Great Job Spot, Inc."}}</script>
+<style>
+:root{--bg:#f7f7f5;--fg:#1d1d1b;--muted:#6b6b66;--card:#fff;--line:#e3e2dd;--ok:#1f7a4d;--warn:#a15c00;--bad:#b3261e;--accent:#0b5cad;--soft:#eef4fb}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#161615;--fg:#ecebe6;--muted:#a3a29c;--card:#1f1f1d;--line:#34332f;--ok:#5cc28f;--warn:#e0a54a;--bad:#f07b72;--accent:#6aa9ec;--soft:#1d2733}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+main{max-width:1100px;margin:0 auto;padding:24px 16px 64px}h1{font-size:24px;margin:0 0 4px}h2{font-size:18px;margin:32px 0 8px}h3{font-size:15px;margin:16px 0 6px}
+.muted{color:var(--muted)}.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;margin:12px 0}
+table{width:100%;border-collapse:collapse;font-size:14px}th,td{text-align:left;padding:7px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-weight:600;color:var(--muted)}td.n,th.n{text-align:right;white-space:nowrap}.scroll{overflow-x:auto}
+.ok{color:var(--ok)}.warn{color:var(--warn)}.bad{color:var(--bad)}a{color:var(--accent)}
+details summary{cursor:pointer;font-weight:600;margin:4px 0}.arrow{color:var(--muted);padding:0 6px}
+.preview{background:var(--soft);border-radius:8px;padding:12px 14px;margin:8px 0}.preview h3{margin-top:4px}
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>FortMyersJobs (Rivet client feed, cleaned)</h1>
+<p class="muted">Test, updated Oct 31, 2026 4:02 PM. Jobiqo is not reading this feed yet. Source: <a href="https://rivet.greatjobspot.com/jobiqo/sites/9a455eae-59b1-4c9c-b046-366920d84d2d/site-feeds/latest.xml">Rivet feed</a>. Cleaned feed: <a href="ftn-fortmyers-clean.xml">ftn-fortmyers-clean.xml</a>.</p>
+<p>Same jobs, same AdNumbers. If Jobiqo's feed URL is switched to the cleaned feed, every job updates in place: same job pages, no new jobs.</p>
+</header>
+<section aria-labelledby="headline"><h2 id="headline">Before and after</h2><div class="card scroll"><table>
+<thead><tr><th>What</th><th class="n">Rivet feed today</th><th class="n">Cleaned</th><th>Note</th></tr></thead><tbody>
+<tr><td>Jobs</td><td class="n">3</td><td class="n">3</td><td class="muted">0 removed (see below)</td></tr>
+<tr><td>Jobs with a category</td><td class="n">3 <span class="muted">(100%)</span></td><td class="n">3 <span class="muted">(100%)</span></td><td class="muted">The engine&#39;s category rules, same as the Orlando feed</td></tr>
+<tr><td>Location includes the city</td><td class="n">3 <span class="muted">(100%)</span></td><td class="n">3 <span class="muted">(100%)</span></td><td class="muted">Allstate sent &quot;Illinois&quot; instead of &quot;Chicago, Illinois&quot;; ZIPs moved to their own field</td></tr>
+<tr><td>Marked remote</td><td class="n">0 <span class="muted">(0%)</span></td><td class="n">1 <span class="muted">(33%)</span></td><td class="muted">Titles saying Remote now flagged as remote</td></tr>
+<tr><td>Pay as a separate field (shown by Google)</td><td class="n">0</td><td class="n">2 <span class="muted">(67%)</span></td><td class="muted">Taken from the description when the posting states it</td></tr>
+<tr><td>Titles</td><td class="n">as sent</td><td class="n">unchanged</td><td class="muted">Kept as sent so job URLs do not change (Jobiqo breaks the old URL when a title changes)</td></tr>
+<tr><td>Garbled characters (ERIEÃ¢Â€Â™s)</td><td class="n">0</td><td class="n">0</td><td class="muted"></td></tr>
+<tr><td>No apply link</td><td class="n">0</td><td class="n">0</td><td class="muted">Dead ends for candidates</td></tr>
+<tr><td>Empty description</td><td class="n">0</td><td class="n">0</td><td class="muted"></td></tr>
+<tr><td>Exact duplicates</td><td class="n">0</td><td class="n">0</td><td class="muted">Same title, city and apply link</td></tr>
+<tr><td>Outside the US</td><td class="n">0</td><td class="n">0</td><td class="muted"></td></tr>
+<tr><td>Quick facts block (test half)</td><td class="n">0</td><td class="n">0 of 0</td><td class="muted">Half the jobs, so Search Console can compare against the other half</td></tr>
+<tr><td>AI &quot;About this job&quot; summary (test half)</td><td class="n">0</td><td class="n">0 of 0</td><td class="muted">100 written per run until all are done</td></tr>
+</tbody></table></div></section>
+
+<section aria-labelledby="cats"><h2 id="cats">Categories after cleaning</h2><div class="card scroll">
+<p class="muted">Specific category (e.g. Claims Adjuster): 2. Main category only (e.g. Claims): 1. None: 0.</p>
+<table><thead><tr><th>Category</th><th class="n">Jobs</th></tr></thead><tbody>
+<tr><td>Sales / Business Development</td><td class="n">2</td></tr>
+<tr><td>Insurance</td><td class="n">1</td></tr>
+<tr><td>Real Estate / Property Management</td><td class="n">1</td></tr>
+<tr><td class="warn">No category</td><td class="n">0</td></tr>
+</tbody></table></div></section>
+
+<section aria-labelledby="hs"><h2 id="hs">Home site by city</h2><div class="card scroll">
+<p class="muted">Each job's Google credit goes to the FTN site for its city, the same as the Orlando feed.</p>
+<table><thead><tr><th>Home site</th><th class="n">Jobs</th></tr></thead><tbody>
+<tr><td>fortmyersjobs</td><td class="n">3</td></tr>
+</tbody></table></div></section>
+
+<section aria-labelledby="cos"><h2 id="cos">By company</h2><div class="card scroll"><table>
+<thead><tr><th>Company <span class="muted">(job system)</span></th><th class="n">Jobs before</th><th class="n">After</th><th class="n">Removed</th><th class="n">Category before</th><th class="n">After</th><th class="n">Pay found</th><th class="n">Titles cleaned</th><th class="n">Remote fixed</th></tr></thead><tbody>
+<tr><td>Liberty Mutual Insurance<br><span class="muted">searchjobs.libertymutualgroup.com</span></td><td class="n">1</td><td class="n">1</td><td class="n">0</td><td class="n">100%</td><td class="n">100%</td><td class="n">1</td><td class="n">0</td><td class="n">1</td></tr>
+<tr><td>Allstate Insurance<br><span class="muted">allstateinsurance.contacthr.com</span></td><td class="n">1</td><td class="n">1</td><td class="n">0</td><td class="n">100%</td><td class="n">100%</td><td class="n">1</td><td class="n">0</td><td class="n">0</td></tr>
+<tr><td>Alliant Insurance<br><span class="muted">jobs.dayforcehcm.com</span></td><td class="n">1</td><td class="n">1</td><td class="n">0</td><td class="n">100%</td><td class="n">100%</td><td class="n">0</td><td class="n">0</td><td class="n">0</td></tr>
+</tbody></table></div></section>
+
+<section aria-labelledby="ex"><h2 id="ex">Examples</h2><div class="card scroll">
+<details open><summary>Categories (Rivet's category, then the engine's)</summary><table><thead><tr><th>Title</th><th>Rivet</th><th>Engine</th></tr></thead><tbody>
+<tr><td>Remote Inside Sales Representative<br><span class="muted">Liberty Mutual Insurance</span></td><td>Sales / Business Development</td><td>Sales Representative, Sales / Business Development</td></tr>
+<tr><td>Technical Assistant- Real Estate P&amp;C Insurance<br><span class="muted">Alliant Insurance</span></td><td>IT / Technology</td><td>Insurance, Real Estate / Property Management</td></tr>
+<tr><td>Direct Sales Agent Specialist (2429) - Direct Auto<br><span class="muted">Allstate Insurance</span></td><td>Sales / Business Development</td><td>Sales Representative, Sales / Business Development</td></tr>
+</tbody></table></details>
+<details><summary>Titles (0 cleaned)</summary><table><tbody>
+
+</tbody></table></details>
+<details><summary>Locations</summary><table><tbody>
+<tr><td>Fort Myers, Florida 33907</td><td><span class="arrow">&rarr;</span>Fort Myers, Florida <span class="muted">ZIP 33907</span></td></tr>
+</tbody></table></details>
+</div></section>
+
+
+<section aria-labelledby="dr"><h2 id="dr">Removed (0)</h2><div class="card scroll">
+
+</div></section>
+
+<section aria-labelledby="nc"><h2 id="nc">Still no category (0)</h2><div class="card scroll">
+<p class="muted">Mostly non-insurance roles (country club staff, investments). Rules get added as they come up.</p>
+<details><summary>Show</summary><table><tbody></tbody></table></details>
+</div></section>
+
+</main>
+</body>
+</html>
